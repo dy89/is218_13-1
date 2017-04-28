@@ -1,4 +1,5 @@
 <?php
+namespace yi\cart{
 // Add an item to the cart
 function add_item(&$cart, $key, $quantity) {
     global $products;
@@ -45,5 +46,6 @@ function get_subtotal($cart) {
     }
     $subtotal_f = number_format($subtotal, 2);
     return $subtotal_f;
+}
 }
 ?>
